@@ -1,0 +1,705 @@
+
+*** Running vivado
+    with args -log fft64_dit_sdf.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fft64_dit_sdf.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fft64_dit_sdf.tcl -notrace
+Command: synth_design -top fft64_dit_sdf -part xc7vx690tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx690t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14880 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 431.773 ; gain = 99.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fft64_dit_sdf' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:215]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dit_sdf_stage' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DELAY_LEN bound to: 1 - type: integer 
+	Parameter STAGE_ID bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'twiddle_rom_64' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:6]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'twiddle_rom_64' (1#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'cmult_std' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:53]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cmult_std' (2#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'dit_sdf_stage' (3#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+INFO: [Synth 8-6157] synthesizing module 'dit_sdf_stage__parameterized0' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DELAY_LEN bound to: 2 - type: integer 
+	Parameter STAGE_ID bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dit_sdf_stage__parameterized0' (3#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+INFO: [Synth 8-6157] synthesizing module 'dit_sdf_stage__parameterized1' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DELAY_LEN bound to: 4 - type: integer 
+	Parameter STAGE_ID bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dit_sdf_stage__parameterized1' (3#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+INFO: [Synth 8-6157] synthesizing module 'dit_sdf_stage__parameterized2' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DELAY_LEN bound to: 8 - type: integer 
+	Parameter STAGE_ID bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dit_sdf_stage__parameterized2' (3#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+INFO: [Synth 8-6157] synthesizing module 'dit_sdf_stage__parameterized3' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DELAY_LEN bound to: 16 - type: integer 
+	Parameter STAGE_ID bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dit_sdf_stage__parameterized3' (3#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+INFO: [Synth 8-6157] synthesizing module 'dit_sdf_stage__parameterized4' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter DELAY_LEN bound to: 32 - type: integer 
+	Parameter STAGE_ID bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dit_sdf_stage__parameterized4' (3#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:118]
+INFO: [Synth 8-6157] synthesizing module 'input_reorder_buffer' [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:70]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+WARNING: [Synth 8-5788] Register mem_re_reg in module input_reorder_buffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-5788] Register mem_im_reg in module input_reorder_buffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-5788] Register dout_re_reg in module input_reorder_buffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:106]
+WARNING: [Synth 8-5788] Register dout_im_reg in module input_reorder_buffer is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:107]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_re_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "mem_re_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem_im_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+RAM "mem_im_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'input_reorder_buffer' (4#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:70]
+INFO: [Synth 8-6155] done synthesizing module 'fft64_dit_sdf' (5#1) [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:215]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 503.773 ; gain = 171.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 503.773 ; gain = 171.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 503.773 ; gain = 171.387
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx690tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/vivado_project/FFT64_SIM/FFT64_SIM.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/vivado_project/FFT64_SIM/FFT64_SIM.srcs/constrs_1/new/timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1076.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1078.000 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1078.000 ; gain = 1.227
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1078.000 ; gain = 745.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx690tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1078.000 ; gain = 745.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1078.000 ; gain = 745.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1078.000 ; gain = 745.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 12    
+	   2 Input     17 Bit       Adders := 12    
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 6     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 397   
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 24    
+	   2 Input      1 Bit        Muxes := 128   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module input_reorder_buffer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 258   
+	                7 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 128   
+Module dit_sdf_stage 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module dit_sdf_stage__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module dit_sdf_stage__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 10    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module dit_sdf_stage__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 18    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module dit_sdf_stage__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 35    
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module dit_sdf_stage__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 66    
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 3600 (col length:200)
+BRAMs: 2940 (col length: RAMB18 200 RAMB36 100)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP u_mult/cr1, operation Mode is: A*B.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr1.
+DSP Report: Generating DSP u_mult/cr0, operation Mode is: C-A*B.
+DSP Report: operator u_mult/cr0 is absorbed into DSP u_mult/cr0.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr0.
+DSP Report: Generating DSP u_mult/ci1, operation Mode is: A*B.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci1.
+DSP Report: Generating DSP u_mult/ci0, operation Mode is: C+A*B.
+DSP Report: operator u_mult/ci0 is absorbed into DSP u_mult/ci0.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci0.
+DSP Report: Generating DSP u_mult/cr1, operation Mode is: A*B.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr1.
+DSP Report: Generating DSP u_mult/cr0, operation Mode is: C-A*B.
+DSP Report: operator u_mult/cr0 is absorbed into DSP u_mult/cr0.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr0.
+DSP Report: Generating DSP u_mult/ci1, operation Mode is: A*B.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci1.
+DSP Report: Generating DSP u_mult/ci0, operation Mode is: C+A*B.
+DSP Report: operator u_mult/ci0 is absorbed into DSP u_mult/ci0.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci0.
+DSP Report: Generating DSP u_mult/cr1, operation Mode is: A*B.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr1.
+DSP Report: Generating DSP u_mult/cr0, operation Mode is: C-A*B.
+DSP Report: operator u_mult/cr0 is absorbed into DSP u_mult/cr0.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr0.
+DSP Report: Generating DSP u_mult/ci1, operation Mode is: A*B.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci1.
+DSP Report: Generating DSP u_mult/ci0, operation Mode is: C+A*B.
+DSP Report: operator u_mult/ci0 is absorbed into DSP u_mult/ci0.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci0.
+DSP Report: Generating DSP u_mult/cr1, operation Mode is: A*B.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr1.
+DSP Report: Generating DSP u_mult/cr0, operation Mode is: C-A*B.
+DSP Report: operator u_mult/cr0 is absorbed into DSP u_mult/cr0.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr0.
+DSP Report: Generating DSP u_mult/ci1, operation Mode is: A*B.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci1.
+DSP Report: Generating DSP u_mult/ci0, operation Mode is: C+A*B.
+DSP Report: operator u_mult/ci0 is absorbed into DSP u_mult/ci0.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci0.
+DSP Report: Generating DSP u_mult/cr1, operation Mode is: A*B.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr1.
+DSP Report: Generating DSP u_mult/cr0, operation Mode is: C-A*B.
+DSP Report: operator u_mult/cr0 is absorbed into DSP u_mult/cr0.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr0.
+DSP Report: Generating DSP u_mult/ci1, operation Mode is: A*B.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci1.
+DSP Report: Generating DSP u_mult/ci0, operation Mode is: C+A*B.
+DSP Report: operator u_mult/ci0 is absorbed into DSP u_mult/ci0.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci0.
+DSP Report: Generating DSP u_mult/cr1, operation Mode is: A*B.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr1.
+DSP Report: Generating DSP u_mult/cr0, operation Mode is: C-A*B.
+DSP Report: operator u_mult/cr0 is absorbed into DSP u_mult/cr0.
+DSP Report: operator u_mult/cr1 is absorbed into DSP u_mult/cr0.
+DSP Report: Generating DSP u_mult/ci1, operation Mode is: A*B.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci1.
+DSP Report: Generating DSP u_mult/ci0, operation Mode is: C+A*B.
+DSP Report: operator u_mult/ci0 is absorbed into DSP u_mult/ci0.
+DSP Report: operator u_mult/ci1 is absorbed into DSP u_mult/ci0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1078.000 ; gain = 745.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|twiddle_rom_64 | w_re       | 64x16         | LUT            | 
+|twiddle_rom_64 | w_im       | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_re | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_im | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_re | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_im | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_re | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_im | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_re | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_im | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_re | 64x16         | LUT            | 
+|dit_sdf_stage  | u_rom/w_im | 64x16         | LUT            | 
++---------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C-A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C+A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C-A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C+A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C-A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C+A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C-A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C+A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C-A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C+A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C-A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|cmult_std   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|cmult_std   | C+A*B       | 16     | 16     | 31     | -      | 31     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1094.289 ; gain = 761.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1131.461 ; gain = 799.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:143]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:143]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv:174]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1146.551 ; gain = 814.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1146.551 ; gain = 814.164
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1146.551 ; gain = 814.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1146.551 ; gain = 814.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1146.551 ; gain = 814.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1146.551 ; gain = 814.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1146.551 ; gain = 814.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fft64_dit_sdf | DIT_STAGES[2].u_stg/en_out_reg          | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|fft64_dit_sdf | DIT_STAGES[3].u_stg/en_out_reg          | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|fft64_dit_sdf | DIT_STAGES[4].u_stg/en_out_reg          | 17     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|fft64_dit_sdf | DIT_STAGES[5].u_stg/en_out_reg          | 33     | 1     | YES          | NO                 | YES               | 0      | 1       | 
+|fft64_dit_sdf | DIT_STAGES[2].u_stg/fifo_re_reg[3][15]  | 4      | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|fft64_dit_sdf | DIT_STAGES[3].u_stg/fifo_re_reg[7][15]  | 8      | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|fft64_dit_sdf | DIT_STAGES[4].u_stg/fifo_re_reg[15][15] | 16     | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|fft64_dit_sdf | DIT_STAGES[5].u_stg/fifo_re_reg[31][15] | 32     | 32    | YES          | NO                 | YES               | 0      | 32      | 
++--------------+-----------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   120|
+|3     |DSP48E1   |    10|
+|4     |DSP48E1_1 |    10|
+|5     |DSP48E1_2 |     2|
+|6     |DSP48E1_3 |     2|
+|7     |LUT1      |    27|
+|8     |LUT2      |   571|
+|9     |LUT3      |   416|
+|10    |LUT4      |    43|
+|11    |LUT5      |    53|
+|12    |LUT6      |  1218|
+|13    |MUXF7     |   544|
+|14    |MUXF8     |   256|
+|15    |SRL16E    |    99|
+|16    |SRLC32E   |    33|
+|17    |FDCE      |   569|
+|18    |FDPE      |     1|
+|19    |FDRE      |  4260|
+|20    |IBUF      |    35|
+|21    |OBUF      |    33|
++------+----------+------+
+
+Report Instance Areas: 
++------+------------------------+------------------------------+------+
+|      |Instance                |Module                        |Cells |
++------+------------------------+------------------------------+------+
+|1     |top                     |                              |  8303|
+|2     |  \DIT_STAGES[0].u_stg  |dit_sdf_stage                 |   222|
+|3     |    u_mult              |cmult_std_4                   |   152|
+|4     |  \DIT_STAGES[1].u_stg  |dit_sdf_stage__parameterized0 |   257|
+|5     |    u_mult              |cmult_std_3                   |    89|
+|6     |  \DIT_STAGES[2].u_stg  |dit_sdf_stage__parameterized1 |   332|
+|7     |    u_mult              |cmult_std_2                   |   159|
+|8     |  \DIT_STAGES[3].u_stg  |dit_sdf_stage__parameterized2 |   346|
+|9     |    u_mult              |cmult_std_1                   |   171|
+|10    |  \DIT_STAGES[4].u_stg  |dit_sdf_stage__parameterized3 |   361|
+|11    |    u_mult              |cmult_std_0                   |   184|
+|12    |  \DIT_STAGES[5].u_stg  |dit_sdf_stage__parameterized4 |   363|
+|13    |    u_mult              |cmult_std                     |   184|
+|14    |  u_in_buf              |input_reorder_buffer          |  6265|
++------+------------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1146.551 ; gain = 814.164
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1146.551 ; gain = 239.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1146.551 ; gain = 814.164
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 944 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1146.551 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+154 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1146.551 ; gain = 826.840
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1146.551 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Happend Outerwall/NJUlocal/fft64_sim/vivado_project/FFT64_SIM/FFT64_SIM.runs/synth_1/fft64_dit_sdf.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fft64_dit_sdf_utilization_synth.rpt -pb fft64_dit_sdf_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  9 23:35:07 2026...

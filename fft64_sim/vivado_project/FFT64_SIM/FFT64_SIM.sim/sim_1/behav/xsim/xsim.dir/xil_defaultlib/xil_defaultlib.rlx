@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv,1767972676,systemVerilog,,C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/tb_fft64.sv,,cmult_std;dit_sdf_stage;fft64_dit_sdf;input_reorder_buffer;twiddle_rom_64,,,,,,,,
+C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/tb_fft64.sv,1767947768,systemVerilog,,,,tb_fft64_dit_sdf,,,,,,,,
+C:/Users/Happend Outerwall/NJUlocal/fft64_sim/vivado_project/FFT64_SIM/FFT64_SIM.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,

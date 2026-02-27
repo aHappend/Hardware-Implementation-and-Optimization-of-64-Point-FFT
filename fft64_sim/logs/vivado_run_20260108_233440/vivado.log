@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jan  8 23:34:25 2026
+# Process ID: 61496
+# Current directory: C:/Users/Happend Outerwall/NJUlocal/fft64_sim
+# Command line: vivado.exe -mode batch -source c:\Users\Happend Outerwall\NJUlocal\fft64_sim\scripts\run_sim.tcl
+# Log file: C:/Users/Happend Outerwall/NJUlocal/fft64_sim/vivado.log
+# Journal file: C:/Users/Happend Outerwall/NJUlocal/fft64_sim\vivado.jou
+#-----------------------------------------------------------
+source {c:\Users\Happend Outerwall\NJUlocal\fft64_sim\scripts\run_sim.tcl}
+# open_project ./vivado_project/FFT64_SIM/FFT64_SIM.xpr
+Scanning sources...
+Finished scanning sources
+# launch_simulation -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Happend Outerwall/NJUlocal/fft64_sim/vivado_project/FFT64_SIM/FFT64_SIM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_fft64' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Happend Outerwall/NJUlocal/fft64_sim/vivado_project/FFT64_SIM/FFT64_SIM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_fft64_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/fft64_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cmult
+INFO: [VRFC 10-311] analyzing module butterfly
+INFO: [VRFC 10-311] analyzing module fft64_model
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/tb_fft64.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fft64
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Happend Outerwall/NJUlocal/fft64_sim/vivado_project/FFT64_SIM/FFT64_SIM.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto f6868af88ab24908b6663c08c912a579 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_fft64_behav xil_defaultlib.tb_fft64 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.cmult
+Compiling module xil_defaultlib.butterfly
+Compiling module xil_defaultlib.fft64_model_default
+Compiling module xil_defaultlib.tb_fft64
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fft64_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Happend Outerwall/NJUlocal/fft64_sim/vivado_project/FFT64_SIM/FFT64_SIM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_fft64_behav -key {Behavioral:sim_1:Functional:tb_fft64} -tclbatch {tb_fft64.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source tb_fft64.tcl
+## current_wave_config
+
+=== INPUT DATA ===
+x[0] = 0  0
+x[1] = 802  0
+x[2] = 1598  0
+x[3] = 2378  0
+x[4] = 3134  0
+x[5] = 3861  0
+x[6] = 4551  0
+x[7] = 5196  0
+x[8] = 5792  0
+x[9] = 6332  0
+x[10] = 6811  0
+x[11] = 7224  0
+x[12] = 7568  0
+x[13] = 7839  0
+x[14] = 8034  0
+x[15] = 8152  0
+x[16] = 8192  0
+x[17] = 8152  0
+x[18] = 8034  0
+x[19] = 7839  0
+x[20] = 7568  0
+x[21] = 7224  0
+x[22] = 6811  0
+x[23] = 6332  0
+x[24] = 5792  0
+x[25] = 5196  0
+x[26] = 4551  0
+x[27] = 3861  0
+x[28] = 3134  0
+x[29] = 2378  0
+x[30] = 1598  0
+x[31] = 802  0
+x[32] = 0  0
+x[33] = -802  0
+x[34] = -1598  0
+x[35] = -2378  0
+x[36] = -3134  0
+x[37] = -3861  0
+x[38] = -4551  0
+x[39] = -5196  0
+x[40] = -5792  0
+x[41] = -6332  0
+x[42] = -6811  0
+x[43] = -7224  0
+x[44] = -7568  0
+x[45] = -7839  0
+x[46] = -8034  0
+x[47] = -8152  0
+x[48] = -8192  0
+x[49] = -8152  0
+x[50] = -8034  0
+x[51] = -7839  0
+x[52] = -7568  0
+x[53] = -7224  0
+x[54] = -6811  0
+x[55] = -6332  0
+x[56] = -5792  0
+x[57] = -5196  0
+x[58] = -4551  0
+x[59] = -3861  0
+x[60] = -3134  0
+x[61] = -2378  0
+x[62] = -1598  0
+x[63] = -802  0
+
+=== OUTPUT FFT DATA ===
+X[0] = 0  0
+X[1] = -2  -4097
+X[2] = 0  0
+X[3] = -2  0
+X[4] = 0  0
+X[5] = 0  0
+X[6] = 0  0
+X[7] = -1  -1
+X[8] = 0  0
+X[9] = 0  0
+X[10] = 0  0
+X[11] = 0  0
+X[12] = 0  0
+X[13] = 0  0
+X[14] = 0  0
+X[15] = -1  0
+X[16] = 0  0
+X[17] = 0  0
+X[18] = 0  0
+X[19] = 0  -1
+X[20] = 0  0
+X[21] = 0  0
+X[22] = 0  0
+X[23] = 0  0
+X[24] = 0  0
+X[25] = 0  0
+X[26] = 0  0
+X[27] = 0  0
+X[28] = 0  0
+X[29] = 0  0
+X[30] = 0  0
+X[31] = 0  0
+X[32] = 0  0
+X[33] = 0  0
+X[34] = 0  0
+X[35] = -1  0
+X[36] = 0  0
+X[37] = 0  0
+X[38] = 0  0
+X[39] = 1  0
+X[40] = 0  0
+X[41] = 0  0
+X[42] = 0  0
+X[43] = 0  0
+X[44] = 0  0
+X[45] = 0  0
+X[46] = 0  0
+X[47] = 0  0
+X[48] = 0  0
+X[49] = 0  0
+X[50] = 0  0
+X[51] = 0  -1
+X[52] = 0  0
+X[53] = 0  0
+X[54] = 0  0
+X[55] = 0  0
+X[56] = 0  0
+X[57] = 0  0
+X[58] = 0  0
+X[59] = 0  0
+X[60] = 0  0
+X[61] = 0  0
+X[62] = 0  0
+X[63] = 0  4096
+
+Output written to output_vivado.txt
+$finish called at time : 265 ns : File "C:/Users/Happend Outerwall/NJUlocal/fft64_sim/sim/tb_fft64.sv" Line 216
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fft64_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 337.711 ; gain = 13.547
+# quit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  8 23:34:40 2026...
