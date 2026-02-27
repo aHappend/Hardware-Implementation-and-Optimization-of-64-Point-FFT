@@ -1,0 +1,2 @@
+# Hardware-Implementation-and-Optimization-of-64-Point-FFT
+围绕 64 点 Radix-2 DIT FFT 的硬件化流程展开，先实现全并行 flash 参考模型以验证算法正确性，再依据 Parhi 折叠/SDF 理论完成串流版 RTL。设计在 Q1.15 定点下集成输入位反转、六级 SDF stage 以及统一归一化策略，并构建 SystemVerilog Testbench + Python/NumPy 联合验证链路，实现一键仿真、日志采集与误差统计。基于 Virtex-7 器件的综合/实现显示：SDF 结构在 LUT、寄存器、DSP、I/O 等指标上相较全并行方案平均下降 70%–98%，在 100 MHz 约束下仍保有 1.6 ns 正裕量，证明该折叠式 FFT 兼具算法等效性与工程可行性，可作为更大规模或可重构 DSP 模块的基础。
