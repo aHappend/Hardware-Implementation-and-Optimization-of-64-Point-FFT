@@ -1,0 +1,17 @@
+中文版：quick_start_notes.txt
+
+# Quick Start Notes
+
+The detailed report is available as `report.pdf` (with a Markdown version as well). In brief, this project implements a 64-point FFT with 16-bit precision. A fully parallel design was tried first, then folding optimization was applied based on the course material so that butterfly units can be reused. This greatly reduces resource usage while keeping the output correct and accurate.
+
+The original source code is in the `sim` directory. The main files are `fft64_model.sv` and `tb_fft64.sv`. By filename suffix, `flash` denotes the fully parallel version and `sdf` denotes the folded/optimized version. The corresponding version can be copied in as a replacement; both versions are intentionally retained.
+
+When running the design, it is recommended to run it for another 10 ns using the control at the top so that the complete result is displayed. The Tcl Console also shows a textual result, which is easier to inspect.
+
+Screenshots are included in the report and in the `screenshots` directory, which contains more examples. Because this is a 64-point FFT and every input and output has real and imaginary parts, there are effectively 128 input values and 128 output values (16 bits each), so it is difficult to capture everything in one screenshot; only representative portions are shown.
+
+The project file is in `vivado_project`; open `FFT64_SIM.xpr` to inspect it.
+
+The project supports five input modes—pulse, sine, square, custom file input, and random data—which can be changed in the `input_mode` section of the code. It also includes Python ideal-reference verification in `py/check_fft64.py` and an automated simulation-and-check flow in `run_fft64_all.py`. If time permits, read `README.md` for a more detailed explanation; otherwise, the report and source code provide the shortest path to the key information.
+
+Thanks to the instructors and teaching assistants for their work throughout the semester. I learned a great deal from the course and wish everyone success in work, study, and life.
